@@ -17,6 +17,12 @@ This is comprised of the following components:
   * [Cloudant](https://console.ng.bluemix.net/catalog/services/cloudantNoSQLDB)
   * [Object Storage](https://console.ng.bluemix.net/catalog/services/Object-Storage)
 
+## Using this Blueprint
+
+To use this Blueprint from your local workstation, you'll first need to download [Terraform](terraform.io) and be sure you've read the [Terraform Getting Started Guide](https://www.terraform.io/intro/getting-started/install.html).
+
+You can see the infrastructure that this Blueprint will create by checking out this repository, supplying the necessary variables, and running `terraform plan`.
+You can then provision the infrastructure by running a `terraform apply`.
 
 -------------------------------------
 
