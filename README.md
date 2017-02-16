@@ -16,3 +16,8 @@ This is comprised of the following components:
   * [OpenWhisk](console.ng.bluemix.net/openwhisk/)
   * [Cloudant](https://console.ng.bluemix.net/catalog/services/cloudantNoSQLDB)
   * [Object Storage](https://console.ng.bluemix.net/catalog/services/Object-Storage)
+
+
+-------------------------------------
+
+_This is for demostration purposes only; this repository does not contain working code_
