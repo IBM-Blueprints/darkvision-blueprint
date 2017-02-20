@@ -1,5 +1,5 @@
 output "openwhisk_crn" {
-  value = "${aws_lambda_function.lambda.crn}"
+  value = "${bluemix_openwhisk_function.video_stills_function.crn}"
 }
 
 output "input_bucket_crn" {
