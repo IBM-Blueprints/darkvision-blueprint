@@ -4,7 +4,7 @@
 
 An IBM Bluemix Blueprint to provision and manage infrastructure for the [OpenWhisk Darkvision App](https://github.com/IBM-Bluemix/openwhisk-darkvisionapp)
 
-This Blueprint will allow you to provision and manage infrastructure as a single unit using [Terraform](terraform.io). This Blueprint can be used with the [IBM Bluemix Blueprint Service](bluemix.com) 
+This Blueprint will allow you to provision and manage infrastructure as a single unit using [Terraform](http://terraform.io). This Blueprint can be used with the [IBM Bluemix Blueprint Service](http://bluemix.com) 
 
 It will deploy the following architecture:
 
@@ -19,10 +19,25 @@ This is comprised of the following components:
 
 ## Using this Blueprint
 
-To use this Blueprint from your local workstation, you'll first need to download [Terraform](terraform.io) and be sure you've read the [Terraform Getting Started Guide](https://www.terraform.io/intro/getting-started/install.html).
+To use this Blueprint from your local workstation, you'll first need to download [Terraform](htp://terraform.io) and be sure you've read the [Terraform Getting Started Guide](https://www.terraform.io/intro/getting-started/install.html).
 
-You can see the infrastructure that this Blueprint will create by checking out this repository, supplying the necessary variables, and running `terraform plan`.
+You can see the infrastructure that this Blueprint will create by using this repository as a [Terraform module](https://www.terraform.io/intro/getting-started/modules.html), writing the necessary configuration and supplying the necessary variables, then running `terraform plan`.
+
+The necessary configuration looks like:
+
+```hcl
+module "darkvision" {
+  source      = "github.com/IBM-Blueprints/darkvision-blueprint"
+  environment = "dev"
+  name        = "my-darkvision-stack"
+}
+```
+
 You can then provision the infrastructure by running a `terraform apply`.
+
+## Feedback
+
+Please use GitHub issues to communicate bugs or improvements you wouldd like to see in this Blueprint.
 
 -------------------------------------
 
