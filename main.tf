@@ -191,5 +191,4 @@ resource "bluemix_openwhisk_function" "video-stills-function" {
   role             = "${bluemix_iam_role.openwhisk.crn}"
   handler          = "createDocument"
   source_code_hash = "${data.archive_file.openwhisk_function.output_base64sha256}"
-  count            = "${var.enabled}"
 }
