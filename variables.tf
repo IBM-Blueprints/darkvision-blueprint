@@ -1,17 +1,10 @@
-variable "lambda_name" {}
+variable "name" {
+  default = "darkvision"
+}
+variable "tier" {
+  default = "dev"
+}
 
-variable "runtime" {}
-
-variable "lambda_zipfile" {}
-
-variable "source_code_hash" {}
-
-variable "handler" {}
-
-variable "schedule_expression" {}
-
-variable "iam_policy_document" {}
-
-variable "enabled" {
-  default = true
+variable "composite_name" {
+  default = "${var.name}_${var.tier}"
 }
