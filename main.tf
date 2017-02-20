@@ -184,7 +184,7 @@ resource "bluemix_iam_role_policy" "openwhisk" {
   policy = "${data.bluemix_iam_policy_document.create_video_stills}"
 }
 
-resource "bluemix_openwhisk_function" "video-stills-function" {
+resource "bluemix_openwhisk_function" "video_stills_function" {
   runtime          = "nodejs4.3"
   filename         = "./function-archive.zip"
   function_name    = "${var.composite_name}_stills-func"
